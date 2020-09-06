@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+:root{
+    --bright-blue: #A8DADC;
+    --normal-blue: #457B9D;
+    --dark-blue: #1D3557;
+    --white: #F1FAEE;
+    --red: #E63946;
+    --dark-red: #B61624;
+    --grey: #52565E;
+    --orange: #F85A40;
+    --yellow: #FFC845;
+    --light-yellow: #FFDA85;
+    --green: #00A35C;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body{
+    background: var(--bright-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+/*
+    ** Global **
+*/
+
+p,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template: 1fr 1fr/ 2fr;
+    grid-gap: 10px;
+
+    width: 45em;
+    height: 32em;
+
+}
+/*
+    ** Upper Body **
+*/
+.upper-body{
+    background: var(--white);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.upper-body h1{
+    color: var(--red);
+    font-weight: bolder;
+}
+
+.upper-body h5{
+    font-size: 22px;
+    color: var(--orange);
+}
+
+.upper-body p{
+    color: var(--grey);
+}
+
+
+/*
+    ** Lower Body **
+*/
+.lower-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.lower-body .right{
+    background: var(--dark-blue);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.right h5{
+    color: var(--yellow);
+    font-size: 22px;
+}
+
+.left{
+    background: var(--normal-blue);
+    color: var(--white);
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left strong{
+    font-weight: bolder;
+}
+
+.right p{
+    color: var(--white);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.right h6{
+    color: var(--light-yellow);
+    font-size: 24px;
+}
+
+p small{
+    color: var(--light-yellow);
+    font-size: 12px;
+}
+
+.btn{
+    width: 160px;
+    height: 50px;
+    background: var(--green);
+    border: 0;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bolder;
+    font-size: 16px;
+}
+
